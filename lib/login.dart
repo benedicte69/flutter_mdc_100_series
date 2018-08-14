@@ -59,6 +59,9 @@ class _LoginPageState extends State<LoginPage> {
               obscureText: true,
             ),
             // TODO: Add button bar (101)
+        ButtonBar(
+          // TODO: Add a beveled rectangular border to CANCEL (103)
+          children: <Widget>[
             FlatButton(
               child: Text('CANCEL'),
               onPressed: () {
@@ -73,6 +76,8 @@ class _LoginPageState extends State<LoginPage> {
                 // TODO: Show the next page (101)
               },
             ),
+          ],
+        ),
           ],
         ),
       ),
