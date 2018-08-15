@@ -18,6 +18,7 @@ import 'package:intl/intl.dart';
 import 'model/data.dart';
 import 'model/product.dart';
 
+
 class HomePage extends StatelessWidget {
   // TODO: Make a collection of cards (102)
   /*List<Card> _buildGridCards(int count) {
