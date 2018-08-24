@@ -81,7 +81,10 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
                 child: Column(
                   // TODO: Align labels to the bottom and center (103)
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+
+                  /*crossAxisAlignment: CrossAxisAlignment.start,*/
                   children: <Widget>[
                     // TODO: Handle overflowing labels (103)
                     Text(
