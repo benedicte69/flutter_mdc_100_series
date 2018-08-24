@@ -92,6 +92,10 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 FlatButton(
                   child: Text('CANCEL'),
+                  shape: BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                  ),
+
                   onPressed: () {
                     // TODO: Clear the text fields (101)
                     _usernameController.clear();
