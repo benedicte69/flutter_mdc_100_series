@@ -40,23 +40,44 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             SizedBox(height: 120.0),
-            // TODO: Wrap Username with PrimaryColorOverride (103)
 
-            // TODO: Wrap Password with PrimaryColorOverride (103)
             // TODO: Add TextField widgets (101)
+            // TODO: Wrap Username with PrimaryColorOverride (103)
             // [Name]
-            TextField(
+            PrimaryColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _usernameController,
+                decoration: InputDecoration(
+                  labelText: 'Username',
+                ),
+              ),
+            ),
+            /*TextField(
               controller: _usernameController,
               decoration: InputDecoration(
                 // TODO: Remove filled: true values (103)
                 //filled: true,
                 labelText: 'Username',
               ),
-            ),
+            ),*/
             //spacer
             SizedBox(height: 16.0),
             //[password]
-            TextField(
+            // TODO: Wrap Password with PrimaryColorOverride (103)
+            PrimaryColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _passwordController,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                ),
+                obscureText: true,
+              ),
+            ),
+
+
+            /*TextField(
               controller: _passwordController,
               decoration: InputDecoration(
                 // TODO: Remove filled: true values (103)
@@ -64,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                 labelText: 'Password',
               ),
               obscureText: true,
-            ),
+            ),*/
             // TODO: Add button bar (101)
             ButtonBar(
               // TODO: Add a beveled rectangular border to CANCEL (103)
