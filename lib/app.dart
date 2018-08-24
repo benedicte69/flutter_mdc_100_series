@@ -74,6 +74,9 @@ ThemeData _buildShrineTheme() {
     ),
 
     // TODO: Decorate the inputs (103)
+    inputDecorationTheme: InputDecorationTheme(
+      border: OutlineInputBorder(),
+    ),
   );
 }
 
