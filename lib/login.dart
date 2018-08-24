@@ -40,14 +40,16 @@ class _LoginPageState extends State<LoginPage> {
             ),
             SizedBox(height: 120.0),
             // TODO: Wrap Username with PrimaryColorOverride (103)
-            // TODO: Remove filled: true values (103)
+
+
             // TODO: Wrap Password with PrimaryColorOverride (103)
             // TODO: Add TextField widgets (101)
             // [Name]
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(
-                filled: true,
+                // TODO: Remove filled: true values (103)
+                //filled: true,
                 labelText: 'Username',
               ),
             ),
@@ -57,7 +59,8 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
-                filled: true,
+                // TODO: Remove filled: true values (103)
+               // filled: true,
                 labelText: 'Password',
               ),
               obscureText: true,
