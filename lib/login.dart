@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'colors.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -41,7 +42,6 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 120.0),
             // TODO: Wrap Username with PrimaryColorOverride (103)
 
-
             // TODO: Wrap Password with PrimaryColorOverride (103)
             // TODO: Add TextField widgets (101)
             // [Name]
@@ -60,34 +60,34 @@ class _LoginPageState extends State<LoginPage> {
               controller: _passwordController,
               decoration: InputDecoration(
                 // TODO: Remove filled: true values (103)
-               // filled: true,
+                // filled: true,
                 labelText: 'Password',
               ),
               obscureText: true,
             ),
             // TODO: Add button bar (101)
-        ButtonBar(
-          // TODO: Add a beveled rectangular border to CANCEL (103)
-          children: <Widget>[
-            FlatButton(
-              child: Text('CANCEL'),
-              onPressed: () {
-                // TODO: Clear the text fields (101)
-                _usernameController.clear();
-                _passwordController.clear();
-              },
+            ButtonBar(
+              // TODO: Add a beveled rectangular border to CANCEL (103)
+              children: <Widget>[
+                FlatButton(
+                  child: Text('CANCEL'),
+                  onPressed: () {
+                    // TODO: Clear the text fields (101)
+                    _usernameController.clear();
+                    _passwordController.clear();
+                  },
+                ),
+                // TODO: Add an elevation to NEXT (103)
+                // TODO: Add a beveled rectangular border to NEXT (103)
+                RaisedButton(
+                  child: Text('NEXT'),
+                  onPressed: () {
+                    // TODO: Show the next page (101)
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
             ),
-            // TODO: Add an elevation to NEXT (103)
-            // TODO: Add a beveled rectangular border to NEXT (103)
-            RaisedButton(
-              child: Text('NEXT'),
-              onPressed: () {
-                // TODO: Show the next page (101)
-                Navigator.pop(context);
-              },
-            ),
-          ],
-        ),
           ],
         ),
       ),
