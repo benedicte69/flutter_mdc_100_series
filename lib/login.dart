@@ -107,6 +107,10 @@ class _LoginPageState extends State<LoginPage> {
                 RaisedButton(
                   child: Text('NEXT'),
                   elevation: 8.0,
+                  shape: BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                  ),
+
                   onPressed: () {
                     // TODO: Show the next page (101)
                     Navigator.pop(context);
