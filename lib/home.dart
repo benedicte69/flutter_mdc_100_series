@@ -64,10 +64,12 @@ class HomePage extends StatelessWidget {
     return products.map((product) {
       return Card(
         // TODO: Adjust card heights (103)
+        elevation: 0.0,
         child: Column(
           // TODO: Center items on the card (103)
           crossAxisAlignment: CrossAxisAlignment.center,
           /*crossAxisAlignment: CrossAxisAlignment.start,*/
+
           children: <Widget>[
             AspectRatio(
               aspectRatio: 18 / 11,
