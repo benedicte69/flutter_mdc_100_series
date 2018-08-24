@@ -16,6 +16,7 @@
 
 // GRID VIEW
 
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -89,6 +90,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // TODO: Add app bar (102)
       appBar: AppBar(
+      //FIRST THEME BRIGHTNESS
+       brightness: Brightness.light,
+        //SECOND THEME BRIGHTNESS
+        //brightness: Brightness.dark,
         // TODO: Add buttons and title (102)
         leading: IconButton(
           icon: Icon(
@@ -134,7 +139,9 @@ class HomePage extends StatelessWidget {
 
 
 
+
 //ASYMMETRIC VIEW
+
 /*
 import 'package:flutter/material.dart';
 
@@ -152,7 +159,10 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.light,
+        //FIRST THEME BRIGHTNESS
+        //brightness: Brightness.light,
+        //SECOND THEME BRIGHTNESS
+        brightness: Brightness.dark,
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
@@ -180,6 +190,7 @@ class HomePage extends StatelessWidget {
   }
 }
 */
+
 
 
 
