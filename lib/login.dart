@@ -49,7 +49,10 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Wrap Username with PrimaryColorOverride (103)
             // [Name]
             PrimaryColorOverride(
-              color: kShrineBrown900,
+              //COLOR FIRST THEME
+              //color: kShrineBrown900,
+              //COLOR SECOND THEME
+              color: kShrineAltYellow,
               child: TextField(
                 controller: _usernameController,
                 decoration: InputDecoration(
@@ -70,7 +73,10 @@ class _LoginPageState extends State<LoginPage> {
             //[password]
             // TODO: Wrap Password with PrimaryColorOverride (103)
             PrimaryColorOverride(
-              color: kShrineBrown900,
+              //COLOR FIRST THEME
+             // color: kShrineBrown900,
+              //COLOR SECOND THEME
+              color: kShrineAltYellow,
               child: TextField(
                 controller: _passwordController,
                 decoration: InputDecoration(
