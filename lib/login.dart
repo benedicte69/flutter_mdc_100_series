@@ -34,9 +34,13 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.asset('assets/diamond.png'),
+                //COLOR FIRST THEME
+                //Image.asset('assets/diamond.png',color: kShrineBackgroundWhite),
+                //COLOR SECOND THEME put it inside the assets!
+               Image.asset('assets/diamond.png',color: kShrineBackgroundWhite),
                 SizedBox(height: 16.0),
                 Text('SHRINE'),
+
               ],
             ),
             SizedBox(height: 120.0),
