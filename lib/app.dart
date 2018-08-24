@@ -58,7 +58,7 @@ final ThemeData _kShrineTheme = _buildShrineTheme();
 
 //FIRST THEME
 
-/*
+
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
@@ -83,10 +83,10 @@ ThemeData _buildShrineTheme() {
       border: CutCornersBorder(),
     ),
 
-    */
+
 /*inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(),
-    ),*//*
+    ),*/
 
   );
 }
@@ -109,11 +109,12 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
     displayColor: kShrineBrown900,
     bodyColor: kShrineBrown900,
   );
-}*/
+}
 
 
 //SECOND Theme
 
+/*
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.dark();
   return base.copyWith(
@@ -154,3 +155,4 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
     bodyColor: kShrineSurfaceWhite,
   );
 }
+*/

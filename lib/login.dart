@@ -37,10 +37,10 @@ class _LoginPageState extends State<LoginPage> {
                 //COLOR FIRST THEME
                 //Image.asset('assets/diamond.png',color: kShrineBackgroundWhite),
                 //COLOR SECOND THEME put it inside the assets!
-               Image.asset('assets/diamond.png',color: kShrineBackgroundWhite),
+                Image.asset('assets/diamond.png',
+                    color: kShrineBackgroundWhite),
                 SizedBox(height: 16.0),
                 Text('SHRINE'),
-
               ],
             ),
             SizedBox(height: 120.0),
@@ -50,9 +50,9 @@ class _LoginPageState extends State<LoginPage> {
             // [Name]
             PrimaryColorOverride(
               //COLOR FIRST THEME
-              //color: kShrineBrown900,
+              color: kShrineBrown900,
               //COLOR SECOND THEME
-              color: kShrineAltYellow,
+              //color: kShrineAltYellow,
               child: TextField(
                 controller: _usernameController,
                 decoration: InputDecoration(
@@ -74,9 +74,9 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Wrap Password with PrimaryColorOverride (103)
             PrimaryColorOverride(
               //COLOR FIRST THEME
-             // color: kShrineBrown900,
+              color: kShrineBrown900,
               //COLOR SECOND THEME
-              color: kShrineAltYellow,
+              //color: kShrineAltYellow,
               child: TextField(
                 controller: _passwordController,
                 decoration: InputDecoration(
@@ -85,7 +85,6 @@ class _LoginPageState extends State<LoginPage> {
                 obscureText: true,
               ),
             ),
-
 
             /*TextField(
               controller: _passwordController,
@@ -105,7 +104,6 @@ class _LoginPageState extends State<LoginPage> {
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
-
                   onPressed: () {
                     // TODO: Clear the text fields (101)
                     _usernameController.clear();
@@ -120,7 +118,6 @@ class _LoginPageState extends State<LoginPage> {
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
-
                   onPressed: () {
                     // TODO: Show the next page (101)
                     Navigator.pop(context);
