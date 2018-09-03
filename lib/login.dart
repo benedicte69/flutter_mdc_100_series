@@ -48,11 +48,11 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Add TextField widgets (101)
             // TODO: Wrap Username with PrimaryColorOverride (103)
             // [Name]
-            PrimaryColorOverride(
+            AccentColorOverride(
               //COLOR FIRST THEME
-              color: kShrineBrown900,
+              //color: kShrineBrown900,
               //COLOR SECOND THEME
-              //color: kShrineAltYellow,
+              color: kShrineAltYellow,
               child: TextField(
                 controller: _usernameController,
                 decoration: InputDecoration(
@@ -72,11 +72,11 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 16.0),
             //[password]
             // TODO: Wrap Password with PrimaryColorOverride (103)
-            PrimaryColorOverride(
+            AccentColorOverride(
               //COLOR FIRST THEME
-              color: kShrineBrown900,
+              //color: kShrineBrown900,
               //COLOR SECOND THEME
-              //color: kShrineAltYellow,
+              color: kShrineAltYellow,
               child: TextField(
                 controller: _passwordController,
                 decoration: InputDecoration(
@@ -133,8 +133,8 @@ class _LoginPageState extends State<LoginPage> {
 }
 
 // TODO: Add PrimaryColorOverride (103)
-class PrimaryColorOverride extends StatelessWidget {
-  const PrimaryColorOverride({Key key, this.color, this.child})
+class AccentColorOverride extends StatelessWidget {
+  const AccentColorOverride({Key key, this.color, this.child})
       : super(key: key);
 
   final Color color;
@@ -144,7 +144,7 @@ class PrimaryColorOverride extends StatelessWidget {
   Widget build(BuildContext context) {
     return Theme(
       child: child,
-      data: Theme.of(context).copyWith(primaryColor: color),
+      data: Theme.of(context).copyWith(accentColor: color),
     );
   }
 }
