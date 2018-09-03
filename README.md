@@ -10,6 +10,9 @@ MDC 102:
  we added a top app bar (with a title and three buttons)
  and cards (to present our app's content). Our home screen is now simple and functional,
  with a basic structure and actionable content.
+ 
+ MDC 103:
+ * You've now used the following MDC components: theme, typography, elevation, and shape
 
 ## Getting Started
 
