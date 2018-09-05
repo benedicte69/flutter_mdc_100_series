@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
               //COLOR FIRST THEME
               //color: kShrineBrown900,
               //COLOR SECOND THEME
-              color: kShrineAltYellow,
+             color: kShrineAltYellow,
               child: TextField(
                 controller: _usernameController,
                 decoration: InputDecoration(
