@@ -21,7 +21,6 @@ import 'supplemental/cut_corners_border.dart';
 
 // TODO: Convert ShrineApp to stateful widget (104)
 class ShrineApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,7 +33,8 @@ class ShrineApp extends StatelessWidget {
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
       // TODO: Add a theme (103)
-    theme: _kShrineTheme,
+      //theme: _kShrineTheme02,
+      theme: _kShrineTheme01,
     );
   }
 
@@ -49,17 +49,14 @@ class ShrineApp extends StatelessWidget {
       fullscreenDialog: true,
     );
   }
-
 }
 
 // TODO: Build a Shrine Theme (103)
-final ThemeData _kShrineTheme = _buildShrineTheme();
+//final ThemeData _kShrineTheme02 = _buildShrineTheme02();
+final ThemeData _kShrineTheme01 = _buildShrineTheme01();
 
-
-//FIRST THEME
-
-
-ThemeData _buildShrineTheme() {
+//FIRST THEME skin
+ThemeData _buildShrineTheme01() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     accentColor: kShrineBrown900,
@@ -70,52 +67,44 @@ ThemeData _buildShrineTheme() {
     textSelectionColor: kShrinePink100,
     errorColor: kShrineErrorRed,
     // TODO: Add the text themes (103)
-    textTheme: _buildShrineTextTheme(base.textTheme),
-    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
-    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    textTheme: _buildShrineTextTheme01(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme01(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme01(base.accentTextTheme),
     // TODO: Add the icon themes (103)
-    primaryIconTheme: base.iconTheme.copyWith(
-        color: kShrineBrown900
-    ),
-
+    primaryIconTheme: base.iconTheme.copyWith(color: kShrineBrown900),
     // TODO: Decorate the inputs (103)
     inputDecorationTheme: InputDecorationTheme(
       border: CutCornersBorder(),
     ),
 
-
 /*inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(),
     ),*/
-
   );
 }
-
+//FIRST THEME Text
 // TODO: Build a Shrine Text Theme (103)
-TextTheme _buildShrineTextTheme(TextTheme base) {
-  return base.copyWith(
-    headline: base.headline.copyWith(
-      fontWeight: FontWeight.w500,
-    ),
-    title: base.title.copyWith(
-        fontSize: 18.0
-    ),
-    caption: base.caption.copyWith(
-      fontWeight: FontWeight.w400,
-      fontSize: 14.0,
-    ),
-  ).apply(
-    fontFamily: 'Rubik',
-    displayColor: kShrineBrown900,
-    bodyColor: kShrineBrown900,
-  );
+TextTheme _buildShrineTextTheme01(TextTheme base) {
+  return base
+      .copyWith(
+        headline: base.headline.copyWith(
+          fontWeight: FontWeight.w500,
+        ),
+        title: base.title.copyWith(fontSize: 18.0),
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14.0,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: kShrineBrown900,
+        bodyColor: kShrineBrown900,
+      );
 }
 
-
-//SECOND Theme
-
-/*
-ThemeData _buildShrineTheme() {
+//SECOND Theme skin
+ThemeData _buildShrineTheme02() {
   final ThemeData base = ThemeData.dark();
   return base.copyWith(
     accentColor: kShrineAltDarkGrey,
@@ -125,34 +114,31 @@ ThemeData _buildShrineTheme() {
     cardColor: kShrineAltDarkGrey,
     textSelectionColor: kShrinePink100,
     errorColor: kShrineErrorRed,
-    textTheme: _buildShrineTextTheme(base.textTheme),
-    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
-    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
-    primaryIconTheme: base.iconTheme.copyWith(
-        color: kShrineAltYellow
-    ),
+    textTheme: _buildShrineTextTheme02(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme02(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme02(base.accentTextTheme),
+    primaryIconTheme: base.iconTheme.copyWith(color: kShrineAltYellow),
     inputDecorationTheme: InputDecorationTheme(
       border: CutCornersBorder(),
     ),
   );
 }
-
-TextTheme _buildShrineTextTheme(TextTheme base) {
-  return base.copyWith(
-    headline: base.headline.copyWith(
-      fontWeight: FontWeight.w500,
-    ),
-    title: base.title.copyWith(
-        fontSize: 18.0
-    ),
-    caption: base.caption.copyWith(
-      fontWeight: FontWeight.w400,
-      fontSize: 14.0,
-    ),
-  ).apply(
-    fontFamily: 'Rubik',
-    displayColor: kShrineSurfaceWhite,
-    bodyColor: kShrineSurfaceWhite,
-  );
+//SECOND Theme Text
+TextTheme _buildShrineTextTheme02(TextTheme base) {
+  return base
+      .copyWith(
+        headline: base.headline.copyWith(
+          fontWeight: FontWeight.w500,
+        ),
+        title: base.title.copyWith(fontSize: 18.0),
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14.0,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: kShrineSurfaceWhite,
+        bodyColor: kShrineSurfaceWhite,
+      );
 }
-*/
